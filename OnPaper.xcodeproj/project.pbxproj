@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E8D8BD71C76F3110047E20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8BD61C76F3110047E20A /* main.m */; };
+		8E8D8BE01C76F3110047E20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BDE1C76F3110047E20A /* Main.storyboard */; };
+		8E8D8BE21C76F3110047E20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BE11C76F3110047E20A /* Assets.xcassets */; };
+		8E8D8BE51C76F3110047E20A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BE31C76F3110047E20A /* LaunchScreen.storyboard */; };
+		8E8D8C4B1C76F3D30047E20A /* ARMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C331C76F3D30047E20A /* ARMarker.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C4C1C76F3D30047E20A /* ARMarkerMulti.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C351C76F3D30047E20A /* ARMarkerMulti.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C4D1C76F3D30047E20A /* ARMarkerNFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C371C76F3D30047E20A /* ARMarkerNFT.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C4E1C76F3D30047E20A /* ARMarkerSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C391C76F3D30047E20A /* ARMarkerSquare.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C501C76F3D30047E20A /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C3D1C76F3D30047E20A /* EAGLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C511C76F3D30047E20A /* trackingSub.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8C3F1C76F3D30047E20A /* trackingSub.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8C591C76F92C0047E20A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C581C76F92C0047E20A /* OpenGLES.framework */; };
+		8E8D8CB11C76FE100047E20A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB01C76FE100047E20A /* QuartzCore.framework */; };
+		8E8D8CB51C76FEB80047E20A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB41C76FEB80047E20A /* CoreGraphics.framework */; };
+		8E8D8CE01C7700540047E20A /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB21C76FE9E0047E20A /* libjpeg.a */; };
+		8E8D8CE11C7700540047E20A /* libOpenThreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB81C76FF180047E20A /* libOpenThreads.a */; };
+		8E8D8CE21C7700540047E20A /* libosg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB91C76FF180047E20A /* libosg.a */; };
+		8E8D8CE31C7700540047E20A /* libosgdb_freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD61C77002F0047E20A /* libosgdb_freetype.a */; };
+		8E8D8CE41C7700540047E20A /* libosgdb_imageio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD71C77002F0047E20A /* libosgdb_imageio.a */; };
+		8E8D8CE51C7700540047E20A /* libosgdb_ive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD81C77002F0047E20A /* libosgdb_ive.a */; };
+		8E8D8CE61C7700540047E20A /* libosgdb_obj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD91C77002F0047E20A /* libosgdb_obj.a */; };
+		8E8D8CE71C7700540047E20A /* libosgdb_osg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CDA1C77002F0047E20A /* libosgdb_osg.a */; };
+		8E8D8CE81C7700540047E20A /* libosgDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBE1C76FFBB0047E20A /* libosgDB.a */; };
+		8E8D8CE91C7700540047E20A /* libosgGA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBF1C76FFBB0047E20A /* libosgGA.a */; };
+		8E8D8CEA1C7700540047E20A /* libosgManipulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC21C76FFDD0047E20A /* libosgManipulator.a */; };
+		8E8D8CEB1C7700540047E20A /* libosgParticle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC31C76FFDD0047E20A /* libosgParticle.a */; };
+		8E8D8CEC1C7700540047E20A /* libosgPresentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC41C76FFDD0047E20A /* libosgPresentation.a */; };
+		8E8D8CED1C7700540047E20A /* libosgShadow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC51C76FFDD0047E20A /* libosgShadow.a */; };
+		8E8D8CEE1C7700540047E20A /* libosgSim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC61C76FFDD0047E20A /* libosgSim.a */; };
+		8E8D8CEF1C7700540047E20A /* libosgTerrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC71C76FFDE0047E20A /* libosgTerrain.a */; };
+		8E8D8CF01C7700540047E20A /* libosgText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC81C76FFDE0047E20A /* libosgText.a */; };
+		8E8D8CF11C7700540047E20A /* libosgUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBC1C76FF380047E20A /* libosgUtil.a */; };
+		8E8D8CF21C7700540047E20A /* libosgViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC91C76FFDE0047E20A /* libosgViewer.a */; };
+		8E8D8CF31C7700540047E20A /* libosgVolume.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CCA1C76FFDE0047E20A /* libosgVolume.a */; };
+		8E8D8CF41C7700540047E20A /* libosgWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CCB1C76FFDE0047E20A /* libosgWidget.a */; };
+		8E8D8CF81C7700550047E20A /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF51C7700550047E20A /* libfreetype.a */; };
+		8E8D8CF91C7700550047E20A /* libosgAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF61C7700550047E20A /* libosgAnimation.a */; };
+		8E8D8CFA1C7700550047E20A /* libosgFX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF71C7700550047E20A /* libosgFX.a */; };
+		8E8D8CFC1C7700620047E20A /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFB1C7700620047E20A /* libz.1.1.3.tbd */; };
+		8E8D8CFE1C7700710047E20A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFD1C7700710047E20A /* CoreImage.framework */; };
+		8E8D8D001C7700850047E20A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFF1C7700850047E20A /* ImageIO.framework */; };
+		8E8D8D021C7701010047E20A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D011C7701000047E20A /* libc++.tbd */; };
+		8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D031C77011A0047E20A /* AudioToolbox.framework */; };
+		8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D051C7701290047E20A /* CoreVideo.framework */; };
+		8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D071C77014A0047E20A /* MobileCoreServices.framework */; };
+		8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C081C76F3420047E20A /* libAR.a */; };
+		8E8D8D0A1C7701A50047E20A /* libAR2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C161C76F3420047E20A /* libAR2.a */; };
+		8E8D8D0B1C7701A50047E20A /* libARgsub_es.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0E1C76F3420047E20A /* libARgsub_es.a */; };
+		8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C101C76F3420047E20A /* libARgsub_es2.a */; };
+		8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0A1C76F3420047E20A /* libARICP.a */; };
+		8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C121C76F3420047E20A /* libARMulti.a */; };
+		8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C141C76F3420047E20A /* libARosg.a */; };
+		8E8D8D101C7701A50047E20A /* libARUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1A1C76F3420047E20A /* libARUtil.a */; };
+		8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0C1C76F3420047E20A /* libARvideo.a */; };
+		8E8D8D121C7701A50047E20A /* libARWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1E1C76F3420047E20A /* libARWrapper.a */; };
+		8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1C1C76F3420047E20A /* libEden.a */; };
+		8E8D8D141C7701A50047E20A /* libKPM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C181C76F3420047E20A /* libKPM.a */; };
+		8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D161C7702AE0047E20A /* AVFoundation.framework */; };
+		8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D181C7702B30047E20A /* CoreMedia.framework */; };
+		8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D1A1C77030C0047E20A /* Accelerate.framework */; };
+		8E8D8D271C7704E00047E20A /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8D261C7704E00047E20A /* Data */; };
+		8E8D8D2F1C770F440047E20A /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D2B1C770F440047E20A /* ARView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8D301C770F440047E20A /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D2D1C770F440047E20A /* ARViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8D331C7710D50047E20A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D321C7710D50047E20A /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E8D8C071C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AEB26291804A42A002290C5;
+			remoteInfo = AR;
+		};
+		8E8D8C091C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A8689FD1AE5D83A00AFC5F7;
+			remoteInfo = ARICP;
+		};
+		8E8D8C0B1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A941C5E1AE5D923000FA802;
+			remoteInfo = ARvideo;
+		};
+		8E8D8C0D1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AD26CBB13B37EEB00F5E037;
+			remoteInfo = ARgsub_es;
+		};
+		8E8D8C0F1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A6C5E501794F4E700061A08;
+			remoteInfo = ARgsub_es2;
+		};
+		8E8D8C111C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AD26CBC13B37EEB00F5E037;
+			remoteInfo = ARMulti;
+		};
+		8E8D8C131C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AD26CBF13B37EEB00F5E037;
+			remoteInfo = ARosg;
+		};
+		8E8D8C151C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A868A821AE5D83C00AFC5F7;
+			remoteInfo = AR2;
+		};
+		8E8D8C171C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A941B541AE5D8D9000FA802;
+			remoteInfo = KPM;
+		};
+		8E8D8C191C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A941BD91AE5D8DC000FA802;
+			remoteInfo = ARUtil;
+		};
+		8E8D8C1B1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AD26CC013B37EEB00F5E037;
+			remoteInfo = Eden;
+		};
+		8E8D8C1D1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AEB27081804A8D8002290C5;
+			remoteInfo = ARWrapper;
+		};
+		8E8D8C1F1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AEAEBE617A744AA00F61E33;
+			remoteInfo = ARAppES1;
+		};
+		8E8D8C211C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AF6B85F13B3778000F983E7;
+			remoteInfo = ARApp;
+		};
+		8E8D8C231C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AF6B86113B3778000F983E7;
+			remoteInfo = ARApp2;
+		};
+		8E8D8C251C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4AF6B86513B3778000F983E7;
+			remoteInfo = ARAppOSG;
+		};
+		8E8D8C271C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A5BAA8D13D82BC000C8D5E7;
+			remoteInfo = ARAppMovie;
+		};
+		8E8D8C291C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A13033415BDFF17003A441C;
+			remoteInfo = ARAppNFT;
+		};
+		8E8D8C2B1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A1302FC15BDFF14003A441C;
+			remoteInfo = ARAppNFTOSG;
+		};
+		8E8D8C2D1C76F3420047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A4BAAC01B745B210012B77D;
+			remoteInfo = ARAppCameraTest;
+		};
+		8E8D8CA31C76FD120047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A8689791AE5D83A00AFC5F7;
+			remoteInfo = ARICP;
+		};
+		8E8D8CA51C76FD2A0047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A6C5E451794F4E700061A08;
+			remoteInfo = ARgsub_es2;
+		};
+		8E8D8CA71C76FD440047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A941BDA1AE5D923000FA802;
+			remoteInfo = ARvideo;
+		};
+		8E8D8CA91C76FD490047E20A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AEB26281804A42A002290C5;
+			remoteInfo = AR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E8D8BD21C76F3110047E20A /* OnPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8D8BD61C76F3110047E20A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E8D8BDF1C76F3110047E20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E8D8BE11C76F3110047E20A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E8D8BE41C76F3110047E20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E8D8BE61C76F3110047E20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARToolKit5iOS.xcodeproj; path = ARToolKit5/ARToolKit5iOS.xcodeproj; sourceTree = "<group>"; };
+		8E8D8C321C76F3D30047E20A /* ARMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarker.h; sourceTree = "<group>"; };
+		8E8D8C331C76F3D30047E20A /* ARMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarker.m; sourceTree = "<group>"; };
+		8E8D8C341C76F3D30047E20A /* ARMarkerMulti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerMulti.h; sourceTree = "<group>"; };
+		8E8D8C351C76F3D30047E20A /* ARMarkerMulti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerMulti.m; sourceTree = "<group>"; };
+		8E8D8C361C76F3D30047E20A /* ARMarkerNFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerNFT.h; sourceTree = "<group>"; };
+		8E8D8C371C76F3D30047E20A /* ARMarkerNFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerNFT.m; sourceTree = "<group>"; };
+		8E8D8C381C76F3D30047E20A /* ARMarkerSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerSquare.h; sourceTree = "<group>"; };
+		8E8D8C391C76F3D30047E20A /* ARMarkerSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerSquare.m; sourceTree = "<group>"; };
+		8E8D8C3C1C76F3D30047E20A /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		8E8D8C3D1C76F3D30047E20A /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		8E8D8C3E1C76F3D30047E20A /* osgPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osgPlugins.h; sourceTree = "<group>"; };
+		8E8D8C3F1C76F3D30047E20A /* trackingSub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trackingSub.c; sourceTree = "<group>"; };
+		8E8D8C571C76F5890047E20A /* pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pch.pch; sourceTree = "<group>"; };
+		8E8D8C581C76F92C0047E20A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		8E8D8CB01C76FE100047E20A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8E8D8CB21C76FE9E0047E20A /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ARToolKit5/lib/ios511/libjpeg.a; sourceTree = "<group>"; };
+		8E8D8CB41C76FEB80047E20A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E8D8CB81C76FF180047E20A /* libOpenThreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOpenThreads.a; path = ARToolKit5/lib/ios511/libOpenThreads.a; sourceTree = "<group>"; };
+		8E8D8CB91C76FF180047E20A /* libosg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosg.a; path = ARToolKit5/lib/ios511/libosg.a; sourceTree = "<group>"; };
+		8E8D8CBC1C76FF380047E20A /* libosgUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgUtil.a; path = ARToolKit5/lib/ios511/libosgUtil.a; sourceTree = "<group>"; };
+		8E8D8CBE1C76FFBB0047E20A /* libosgDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgDB.a; path = ARToolKit5/lib/ios511/libosgDB.a; sourceTree = "<group>"; };
+		8E8D8CBF1C76FFBB0047E20A /* libosgGA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgGA.a; path = ARToolKit5/lib/ios511/libosgGA.a; sourceTree = "<group>"; };
+		8E8D8CC21C76FFDD0047E20A /* libosgManipulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgManipulator.a; path = ARToolKit5/lib/ios511/libosgManipulator.a; sourceTree = "<group>"; };
+		8E8D8CC31C76FFDD0047E20A /* libosgParticle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgParticle.a; path = ARToolKit5/lib/ios511/libosgParticle.a; sourceTree = "<group>"; };
+		8E8D8CC41C76FFDD0047E20A /* libosgPresentation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgPresentation.a; path = ARToolKit5/lib/ios511/libosgPresentation.a; sourceTree = "<group>"; };
+		8E8D8CC51C76FFDD0047E20A /* libosgShadow.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgShadow.a; path = ARToolKit5/lib/ios511/libosgShadow.a; sourceTree = "<group>"; };
+		8E8D8CC61C76FFDD0047E20A /* libosgSim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgSim.a; path = ARToolKit5/lib/ios511/libosgSim.a; sourceTree = "<group>"; };
+		8E8D8CC71C76FFDE0047E20A /* libosgTerrain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgTerrain.a; path = ARToolKit5/lib/ios511/libosgTerrain.a; sourceTree = "<group>"; };
+		8E8D8CC81C76FFDE0047E20A /* libosgText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgText.a; path = ARToolKit5/lib/ios511/libosgText.a; sourceTree = "<group>"; };
+		8E8D8CC91C76FFDE0047E20A /* libosgViewer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgViewer.a; path = ARToolKit5/lib/ios511/libosgViewer.a; sourceTree = "<group>"; };
+		8E8D8CCA1C76FFDE0047E20A /* libosgVolume.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgVolume.a; path = ARToolKit5/lib/ios511/libosgVolume.a; sourceTree = "<group>"; };
+		8E8D8CCB1C76FFDE0047E20A /* libosgWidget.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgWidget.a; path = ARToolKit5/lib/ios511/libosgWidget.a; sourceTree = "<group>"; };
+		8E8D8CD61C77002F0047E20A /* libosgdb_freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgdb_freetype.a; path = ARToolKit5/lib/ios511/libosgdb_freetype.a; sourceTree = "<group>"; };
+		8E8D8CD71C77002F0047E20A /* libosgdb_imageio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgdb_imageio.a; path = ARToolKit5/lib/ios511/libosgdb_imageio.a; sourceTree = "<group>"; };
+		8E8D8CD81C77002F0047E20A /* libosgdb_ive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgdb_ive.a; path = ARToolKit5/lib/ios511/libosgdb_ive.a; sourceTree = "<group>"; };
+		8E8D8CD91C77002F0047E20A /* libosgdb_obj.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgdb_obj.a; path = ARToolKit5/lib/ios511/libosgdb_obj.a; sourceTree = "<group>"; };
+		8E8D8CDA1C77002F0047E20A /* libosgdb_osg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgdb_osg.a; path = ARToolKit5/lib/ios511/libosgdb_osg.a; sourceTree = "<group>"; };
+		8E8D8CF51C7700550047E20A /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ARToolKit5/lib/ios511/libfreetype.a; sourceTree = "<group>"; };
+		8E8D8CF61C7700550047E20A /* libosgAnimation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgAnimation.a; path = ARToolKit5/lib/ios511/libosgAnimation.a; sourceTree = "<group>"; };
+		8E8D8CF71C7700550047E20A /* libosgFX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libosgFX.a; path = ARToolKit5/lib/ios511/libosgFX.a; sourceTree = "<group>"; };
+		8E8D8CFB1C7700620047E20A /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		8E8D8CFD1C7700710047E20A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		8E8D8CFF1C7700850047E20A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		8E8D8D011C7701000047E20A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8E8D8D031C77011A0047E20A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8E8D8D051C7701290047E20A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8E8D8D071C77014A0047E20A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8E8D8D151C77026F0047E20A /* trackingSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackingSub.h; sourceTree = "<group>"; };
+		8E8D8D161C7702AE0047E20A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8E8D8D181C7702B30047E20A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8E8D8D1A1C77030C0047E20A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8E8D8D261C7704E00047E20A /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = ARToolKit5/bin/Data; sourceTree = "<group>"; };
+		8E8D8D2A1C770F440047E20A /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		8E8D8D2B1C770F440047E20A /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
+		8E8D8D2C1C770F440047E20A /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		8E8D8D2D1C770F440047E20A /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		8E8D8D311C7710D50047E20A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E8D8D321C7710D50047E20A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E8D8BCF1C76F3110047E20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */,
+				8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */,
+				8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */,
+				8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */,
+				8E8D8D0A1C7701A50047E20A /* libAR2.a in Frameworks */,
+				8E8D8D0B1C7701A50047E20A /* libARgsub_es.a in Frameworks */,
+				8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */,
+				8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */,
+				8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */,
+				8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */,
+				8E8D8D101C7701A50047E20A /* libARUtil.a in Frameworks */,
+				8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */,
+				8E8D8D121C7701A50047E20A /* libARWrapper.a in Frameworks */,
+				8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */,
+				8E8D8D141C7701A50047E20A /* libKPM.a in Frameworks */,
+				8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */,
+				8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */,
+				8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */,
+				8E8D8D021C7701010047E20A /* libc++.tbd in Frameworks */,
+				8E8D8D001C7700850047E20A /* ImageIO.framework in Frameworks */,
+				8E8D8CFE1C7700710047E20A /* CoreImage.framework in Frameworks */,
+				8E8D8CFC1C7700620047E20A /* libz.1.1.3.tbd in Frameworks */,
+				8E8D8CF81C7700550047E20A /* libfreetype.a in Frameworks */,
+				8E8D8CF91C7700550047E20A /* libosgAnimation.a in Frameworks */,
+				8E8D8CFA1C7700550047E20A /* libosgFX.a in Frameworks */,
+				8E8D8CE01C7700540047E20A /* libjpeg.a in Frameworks */,
+				8E8D8CE11C7700540047E20A /* libOpenThreads.a in Frameworks */,
+				8E8D8CE21C7700540047E20A /* libosg.a in Frameworks */,
+				8E8D8CE31C7700540047E20A /* libosgdb_freetype.a in Frameworks */,
+				8E8D8CE41C7700540047E20A /* libosgdb_imageio.a in Frameworks */,
+				8E8D8CE51C7700540047E20A /* libosgdb_ive.a in Frameworks */,
+				8E8D8CE61C7700540047E20A /* libosgdb_obj.a in Frameworks */,
+				8E8D8CE71C7700540047E20A /* libosgdb_osg.a in Frameworks */,
+				8E8D8CE81C7700540047E20A /* libosgDB.a in Frameworks */,
+				8E8D8CE91C7700540047E20A /* libosgGA.a in Frameworks */,
+				8E8D8CEA1C7700540047E20A /* libosgManipulator.a in Frameworks */,
+				8E8D8CEB1C7700540047E20A /* libosgParticle.a in Frameworks */,
+				8E8D8CEC1C7700540047E20A /* libosgPresentation.a in Frameworks */,
+				8E8D8CED1C7700540047E20A /* libosgShadow.a in Frameworks */,
+				8E8D8CEE1C7700540047E20A /* libosgSim.a in Frameworks */,
+				8E8D8CEF1C7700540047E20A /* libosgTerrain.a in Frameworks */,
+				8E8D8CF01C7700540047E20A /* libosgText.a in Frameworks */,
+				8E8D8CF11C7700540047E20A /* libosgUtil.a in Frameworks */,
+				8E8D8CF21C7700540047E20A /* libosgViewer.a in Frameworks */,
+				8E8D8CF31C7700540047E20A /* libosgVolume.a in Frameworks */,
+				8E8D8CF41C7700540047E20A /* libosgWidget.a in Frameworks */,
+				8E8D8CB51C76FEB80047E20A /* CoreGraphics.framework in Frameworks */,
+				8E8D8CB11C76FE100047E20A /* QuartzCore.framework in Frameworks */,
+				8E8D8C591C76F92C0047E20A /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E8D8BC91C76F3110047E20A = {
+			isa = PBXGroup;
+			children = (
+				8E8D8D261C7704E00047E20A /* Data */,
+				8E8D8D1C1C7703130047E20A /* libs */,
+				8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */,
+				8E8D8BD41C76F3110047E20A /* OnPaper */,
+				8E8D8BD31C76F3110047E20A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E8D8BD31C76F3110047E20A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8BD21C76F3110047E20A /* OnPaper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E8D8BD41C76F3110047E20A /* OnPaper */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8D311C7710D50047E20A /* AppDelegate.h */,
+				8E8D8D321C7710D50047E20A /* AppDelegate.m */,
+				8E8D8D2A1C770F440047E20A /* ARView.h */,
+				8E8D8D2B1C770F440047E20A /* ARView.m */,
+				8E8D8D2C1C770F440047E20A /* ARViewController.h */,
+				8E8D8D2D1C770F440047E20A /* ARViewController.m */,
+				8E8D8C311C76F3D30047E20A /* ARAppCore */,
+				8E8D8BDE1C76F3110047E20A /* Main.storyboard */,
+				8E8D8BE11C76F3110047E20A /* Assets.xcassets */,
+				8E8D8BE31C76F3110047E20A /* LaunchScreen.storyboard */,
+				8E8D8BE61C76F3110047E20A /* Info.plist */,
+				8E8D8BD51C76F3110047E20A /* Supporting Files */,
+				8E8D8C571C76F5890047E20A /* pch.pch */,
+			);
+			path = OnPaper;
+			sourceTree = "<group>";
+		};
+		8E8D8BD51C76F3110047E20A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8BD61C76F3110047E20A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E8D8BED1C76F3410047E20A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8C081C76F3420047E20A /* libAR.a */,
+				8E8D8C0A1C76F3420047E20A /* libARICP.a */,
+				8E8D8C0C1C76F3420047E20A /* libARvideo.a */,
+				8E8D8C0E1C76F3420047E20A /* libARgsub_es.a */,
+				8E8D8C101C76F3420047E20A /* libARgsub_es2.a */,
+				8E8D8C121C76F3420047E20A /* libARMulti.a */,
+				8E8D8C141C76F3420047E20A /* libARosg.a */,
+				8E8D8C161C76F3420047E20A /* libAR2.a */,
+				8E8D8C181C76F3420047E20A /* libKPM.a */,
+				8E8D8C1A1C76F3420047E20A /* libARUtil.a */,
+				8E8D8C1C1C76F3420047E20A /* libEden.a */,
+				8E8D8C1E1C76F3420047E20A /* libARWrapper.a */,
+				8E8D8C201C76F3420047E20A /* ARAppES1.app */,
+				8E8D8C221C76F3420047E20A /* ARApp.app */,
+				8E8D8C241C76F3420047E20A /* ARApp2.app */,
+				8E8D8C261C76F3420047E20A /* ARAppOSG.app */,
+				8E8D8C281C76F3420047E20A /* ARAppMovie.app */,
+				8E8D8C2A1C76F3420047E20A /* ARAppNFT.app */,
+				8E8D8C2C1C76F3420047E20A /* ARAppNFTOSG.app */,
+				8E8D8C2E1C76F3420047E20A /* ARAppCameraTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E8D8C311C76F3D30047E20A /* ARAppCore */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8D151C77026F0047E20A /* trackingSub.h */,
+				8E8D8C321C76F3D30047E20A /* ARMarker.h */,
+				8E8D8C331C76F3D30047E20A /* ARMarker.m */,
+				8E8D8C341C76F3D30047E20A /* ARMarkerMulti.h */,
+				8E8D8C351C76F3D30047E20A /* ARMarkerMulti.m */,
+				8E8D8C361C76F3D30047E20A /* ARMarkerNFT.h */,
+				8E8D8C371C76F3D30047E20A /* ARMarkerNFT.m */,
+				8E8D8C381C76F3D30047E20A /* ARMarkerSquare.h */,
+				8E8D8C391C76F3D30047E20A /* ARMarkerSquare.m */,
+				8E8D8C3C1C76F3D30047E20A /* EAGLView.h */,
+				8E8D8C3D1C76F3D30047E20A /* EAGLView.m */,
+				8E8D8C3E1C76F3D30047E20A /* osgPlugins.h */,
+				8E8D8C3F1C76F3D30047E20A /* trackingSub.c */,
+			);
+			path = ARAppCore;
+			sourceTree = "<group>";
+		};
+		8E8D8D1C1C7703130047E20A /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8E8D8D1A1C77030C0047E20A /* Accelerate.framework */,
+				8E8D8D181C7702B30047E20A /* CoreMedia.framework */,
+				8E8D8D161C7702AE0047E20A /* AVFoundation.framework */,
+				8E8D8D071C77014A0047E20A /* MobileCoreServices.framework */,
+				8E8D8D051C7701290047E20A /* CoreVideo.framework */,
+				8E8D8D031C77011A0047E20A /* AudioToolbox.framework */,
+				8E8D8D011C7701000047E20A /* libc++.tbd */,
+				8E8D8CFF1C7700850047E20A /* ImageIO.framework */,
+				8E8D8CFD1C7700710047E20A /* CoreImage.framework */,
+				8E8D8CFB1C7700620047E20A /* libz.1.1.3.tbd */,
+				8E8D8CF51C7700550047E20A /* libfreetype.a */,
+				8E8D8CF61C7700550047E20A /* libosgAnimation.a */,
+				8E8D8CF71C7700550047E20A /* libosgFX.a */,
+				8E8D8CD61C77002F0047E20A /* libosgdb_freetype.a */,
+				8E8D8CD71C77002F0047E20A /* libosgdb_imageio.a */,
+				8E8D8CD81C77002F0047E20A /* libosgdb_ive.a */,
+				8E8D8CD91C77002F0047E20A /* libosgdb_obj.a */,
+				8E8D8CDA1C77002F0047E20A /* libosgdb_osg.a */,
+				8E8D8CC21C76FFDD0047E20A /* libosgManipulator.a */,
+				8E8D8CC31C76FFDD0047E20A /* libosgParticle.a */,
+				8E8D8CC41C76FFDD0047E20A /* libosgPresentation.a */,
+				8E8D8CC51C76FFDD0047E20A /* libosgShadow.a */,
+				8E8D8CC61C76FFDD0047E20A /* libosgSim.a */,
+				8E8D8CC71C76FFDE0047E20A /* libosgTerrain.a */,
+				8E8D8CC81C76FFDE0047E20A /* libosgText.a */,
+				8E8D8CC91C76FFDE0047E20A /* libosgViewer.a */,
+				8E8D8CCA1C76FFDE0047E20A /* libosgVolume.a */,
+				8E8D8CCB1C76FFDE0047E20A /* libosgWidget.a */,
+				8E8D8CBE1C76FFBB0047E20A /* libosgDB.a */,
+				8E8D8CBF1C76FFBB0047E20A /* libosgGA.a */,
+				8E8D8CBC1C76FF380047E20A /* libosgUtil.a */,
+				8E8D8CB81C76FF180047E20A /* libOpenThreads.a */,
+				8E8D8CB91C76FF180047E20A /* libosg.a */,
+				8E8D8CB41C76FEB80047E20A /* CoreGraphics.framework */,
+				8E8D8CB21C76FE9E0047E20A /* libjpeg.a */,
+				8E8D8CB01C76FE100047E20A /* QuartzCore.framework */,
+				8E8D8C581C76F92C0047E20A /* OpenGLES.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E8D8BD11C76F3110047E20A /* OnPaper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8D8BE91C76F3110047E20A /* Build configuration list for PBXNativeTarget "OnPaper" */;
+			buildPhases = (
+				8E8D8BCE1C76F3110047E20A /* Sources */,
+				8E8D8BCF1C76F3110047E20A /* Frameworks */,
+				8E8D8BD01C76F3110047E20A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E8D8CAA1C76FD490047E20A /* PBXTargetDependency */,
+				8E8D8CA81C76FD440047E20A /* PBXTargetDependency */,
+				8E8D8CA61C76FD2A0047E20A /* PBXTargetDependency */,
+				8E8D8CA41C76FD120047E20A /* PBXTargetDependency */,
+			);
+			name = OnPaper;
+			productName = OnPaper;
+			productReference = 8E8D8BD21C76F3110047E20A /* OnPaper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E8D8BCA1C76F3110047E20A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wangyang;
+				TargetAttributes = {
+					8E8D8BD11C76F3110047E20A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 8E8D8BCD1C76F3110047E20A /* Build configuration list for PBXProject "OnPaper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E8D8BC91C76F3110047E20A;
+			productRefGroup = 8E8D8BD31C76F3110047E20A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8E8D8BED1C76F3410047E20A /* Products */;
+					ProjectRef = 8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8E8D8BD11C76F3110047E20A /* OnPaper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8E8D8C081C76F3420047E20A /* libAR.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAR.a;
+			remoteRef = 8E8D8C071C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C0A1C76F3420047E20A /* libARICP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARICP.a;
+			remoteRef = 8E8D8C091C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C0C1C76F3420047E20A /* libARvideo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARvideo.a;
+			remoteRef = 8E8D8C0B1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C0E1C76F3420047E20A /* libARgsub_es.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARgsub_es.a;
+			remoteRef = 8E8D8C0D1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C101C76F3420047E20A /* libARgsub_es2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARgsub_es2.a;
+			remoteRef = 8E8D8C0F1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C121C76F3420047E20A /* libARMulti.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARMulti.a;
+			remoteRef = 8E8D8C111C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C141C76F3420047E20A /* libARosg.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARosg.a;
+			remoteRef = 8E8D8C131C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C161C76F3420047E20A /* libAR2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAR2.a;
+			remoteRef = 8E8D8C151C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C181C76F3420047E20A /* libKPM.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKPM.a;
+			remoteRef = 8E8D8C171C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C1A1C76F3420047E20A /* libARUtil.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARUtil.a;
+			remoteRef = 8E8D8C191C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C1C1C76F3420047E20A /* libEden.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEden.a;
+			remoteRef = 8E8D8C1B1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C1E1C76F3420047E20A /* libARWrapper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARWrapper.a;
+			remoteRef = 8E8D8C1D1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C201C76F3420047E20A /* ARAppES1.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppES1.app;
+			remoteRef = 8E8D8C1F1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C221C76F3420047E20A /* ARApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARApp.app;
+			remoteRef = 8E8D8C211C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C241C76F3420047E20A /* ARApp2.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARApp2.app;
+			remoteRef = 8E8D8C231C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C261C76F3420047E20A /* ARAppOSG.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppOSG.app;
+			remoteRef = 8E8D8C251C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C281C76F3420047E20A /* ARAppMovie.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppMovie.app;
+			remoteRef = 8E8D8C271C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C2A1C76F3420047E20A /* ARAppNFT.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppNFT.app;
+			remoteRef = 8E8D8C291C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C2C1C76F3420047E20A /* ARAppNFTOSG.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppNFTOSG.app;
+			remoteRef = 8E8D8C2B1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E8D8C2E1C76F3420047E20A /* ARAppCameraTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ARAppCameraTest.app;
+			remoteRef = 8E8D8C2D1C76F3420047E20A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E8D8BD01C76F3110047E20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8D8BE51C76F3110047E20A /* LaunchScreen.storyboard in Resources */,
+				8E8D8BE21C76F3110047E20A /* Assets.xcassets in Resources */,
+				8E8D8D271C7704E00047E20A /* Data in Resources */,
+				8E8D8BE01C76F3110047E20A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E8D8BCE1C76F3110047E20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8D8C4B1C76F3D30047E20A /* ARMarker.m in Sources */,
+				8E8D8D2F1C770F440047E20A /* ARView.m in Sources */,
+				8E8D8C4D1C76F3D30047E20A /* ARMarkerNFT.m in Sources */,
+				8E8D8C4C1C76F3D30047E20A /* ARMarkerMulti.m in Sources */,
+				8E8D8D331C7710D50047E20A /* AppDelegate.m in Sources */,
+				8E8D8C501C76F3D30047E20A /* EAGLView.m in Sources */,
+				8E8D8C511C76F3D30047E20A /* trackingSub.c in Sources */,
+				8E8D8BD71C76F3110047E20A /* main.m in Sources */,
+				8E8D8C4E1C76F3D30047E20A /* ARMarkerSquare.m in Sources */,
+				8E8D8D301C770F440047E20A /* ARViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E8D8CA41C76FD120047E20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARICP;
+			targetProxy = 8E8D8CA31C76FD120047E20A /* PBXContainerItemProxy */;
+		};
+		8E8D8CA61C76FD2A0047E20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARgsub_es2;
+			targetProxy = 8E8D8CA51C76FD2A0047E20A /* PBXContainerItemProxy */;
+		};
+		8E8D8CA81C76FD440047E20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARvideo;
+			targetProxy = 8E8D8CA71C76FD440047E20A /* PBXContainerItemProxy */;
+		};
+		8E8D8CAA1C76FD490047E20A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AR;
+			targetProxy = 8E8D8CA91C76FD490047E20A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E8D8BDE1C76F3110047E20A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8D8BDF1C76F3110047E20A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E8D8BE31C76F3110047E20A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8D8BE41C76F3110047E20A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E8D8BE71C76F3110047E20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E8D8BE81C76F3110047E20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E8D8BEA1C76F3110047E20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OnPaper/pch.pch";
+				INFOPLIST_FILE = OnPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolKit5/lib",
+					"$(PROJECT_DIR)/ARToolKit5/lib/ios511",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OnPaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ARToolKit5/include $(SRCROOT)/ARToolKit5/include/ios511";
+			};
+			name = Debug;
+		};
+		8E8D8BEB1C76F3110047E20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OnPaper/pch.pch";
+				INFOPLIST_FILE = OnPaper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolKit5/lib",
+					"$(PROJECT_DIR)/ARToolKit5/lib/ios511",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OnPaper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ARToolKit5/include $(SRCROOT)/ARToolKit5/include/ios511";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E8D8BCD1C76F3110047E20A /* Build configuration list for PBXProject "OnPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8D8BE71C76F3110047E20A /* Debug */,
+				8E8D8BE81C76F3110047E20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E8D8BE91C76F3110047E20A /* Build configuration list for PBXNativeTarget "OnPaper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8D8BEA1C76F3110047E20A /* Debug */,
+				8E8D8BEB1C76F3110047E20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E8D8BCA1C76F3110047E20A /* Project object */;
+}
