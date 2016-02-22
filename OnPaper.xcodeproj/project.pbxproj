@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E80A8D81C7AAD2F00707FF5 /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C081C76F3420047E20A /* libAR.a */; };
-		8E80A8D91C7AAD2F00707FF5 /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C101C76F3420047E20A /* libARgsub_es2.a */; };
-		8E80A8DA1C7AAD2F00707FF5 /* libARICP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0A1C76F3420047E20A /* libARICP.a */; };
-		8E80A8DB1C7AAD2F00707FF5 /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0C1C76F3420047E20A /* libARvideo.a */; };
-		8E80A8DC1C7AAD3D00707FF5 /* libARMulti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C121C76F3420047E20A /* libARMulti.a */; };
-		8E80A8DD1C7AAD9800707FF5 /* libEden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1C1C76F3420047E20A /* libEden.a */; };
-		8E80A8E61C7AD76C00707FF5 /* ARCameraCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */; };
-		8E80A8EB1C7AE39B00707FF5 /* ARMarkerDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */; };
-		8E80A9021C7AFE1A00707FF5 /* ARDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */; };
+		8E64B1F61C7B3B8C007027A0 /* ARCameraCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B1F01C7B3B8C007027A0 /* ARCameraCapture.m */; };
+		8E64B1F71C7B3B8C007027A0 /* ARDisplayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B1F21C7B3B8C007027A0 /* ARDisplayView.mm */; };
+		8E64B1F81C7B3B8C007027A0 /* ARMarkerDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B1F41C7B3B8C007027A0 /* ARMarkerDetector.m */; };
+		8E64B1F91C7B3B8C007027A0 /* hiro_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E64B1F51C7B3B8C007027A0 /* hiro_marker.png */; };
+		8E64B27D1C7B49DA007027A0 /* OGEApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B25D1C7B49DA007027A0 /* OGEApplication.mm */; };
+		8E64B27E1C7B49DA007027A0 /* OGEFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2611C7B49DA007027A0 /* OGEFile.mm */; };
+		8E64B27F1C7B49DA007027A0 /* OGEGlobal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2621C7B49DA007027A0 /* OGEGlobal.cpp */; };
+		8E64B2801C7B49DA007027A0 /* OGEMaterial.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2651C7B49DA007027A0 /* OGEMaterial.mm */; };
+		8E64B2811C7B49DA007027A0 /* OGEMesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2671C7B49DA007027A0 /* OGEMesh.mm */; };
+		8E64B2821C7B49DA007027A0 /* OGEOBJ.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2691C7B49DA007027A0 /* OGEOBJ.mm */; };
+		8E64B2831C7B49DA007027A0 /* OGEProgram.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B26B1C7B49DA007027A0 /* OGEProgram.mm */; };
+		8E64B2841C7B49DA007027A0 /* OGETexture.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B26D1C7B49DA007027A0 /* OGETexture.mm */; };
+		8E64B2851C7B49DA007027A0 /* ShaderDefault.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8E64B26F1C7B49DA007027A0 /* ShaderDefault.fsh */; };
+		8E64B2861C7B49DA007027A0 /* ShaderDefault.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8E64B2701C7B49DA007027A0 /* ShaderDefault.vsh */; };
+		8E64B2871C7B49DA007027A0 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E64B2781C7B49DA007027A0 /* libpng.a */; };
+		8E64B2881C7B49DA007027A0 /* tiny_obj_loader.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B2791C7B49DA007027A0 /* tiny_obj_loader.cc */; };
+		8E64B2891C7B49DA007027A0 /* WavefrontOBJ.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E64B27C1C7B49DA007027A0 /* WavefrontOBJ.mm */; };
+		8E64B28C1C7B4AF3007027A0 /* cube2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 8E64B28B1C7B4AF3007027A0 /* cube2.obj */; };
+		8E64B28E1C7B4B85007027A0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E64B28D1C7B4B84007027A0 /* GLKit.framework */; };
+		8E64B2901C7B4D9D007027A0 /* cube2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 8E64B28F1C7B4D9D007027A0 /* cube2.mtl */; };
 		8E8D8BD71C76F3110047E20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8BD61C76F3110047E20A /* main.m */; };
 		8E8D8BE01C76F3110047E20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BDE1C76F3110047E20A /* Main.storyboard */; };
 		8E8D8BE21C76F3110047E20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BE11C76F3110047E20A /* Assets.xcassets */; };
@@ -36,13 +47,20 @@
 		8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D031C77011A0047E20A /* AudioToolbox.framework */; };
 		8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D051C7701290047E20A /* CoreVideo.framework */; };
 		8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D071C77014A0047E20A /* MobileCoreServices.framework */; };
+		8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C081C76F3420047E20A /* libAR.a */; };
+		8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C101C76F3420047E20A /* libARgsub_es2.a */; };
+		8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0A1C76F3420047E20A /* libARICP.a */; };
+		8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C121C76F3420047E20A /* libARMulti.a */; };
+		8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C141C76F3420047E20A /* libARosg.a */; };
+		8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0C1C76F3420047E20A /* libARvideo.a */; };
+		8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1C1C76F3420047E20A /* libEden.a */; };
 		8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D161C7702AE0047E20A /* AVFoundation.framework */; };
 		8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D181C7702B30047E20A /* CoreMedia.framework */; };
 		8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D1A1C77030C0047E20A /* Accelerate.framework */; };
 		8E8D8D271C7704E00047E20A /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8D261C7704E00047E20A /* Data */; };
-		8E8D8D2F1C770F440047E20A /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D2B1C770F440047E20A /* ARView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E8D8D2F1C770F440047E20A /* ARView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D2B1C770F440047E20A /* ARView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8E8D8D301C770F440047E20A /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D2D1C770F440047E20A /* ARViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8E8D8D331C7710D50047E20A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D321C7710D50047E20A /* AppDelegate.m */; };
+		8E8D8D331C7710D50047E20A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8D321C7710D50047E20A /* AppDelegate.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,12 +235,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E80A8E41C7AD76C00707FF5 /* ARCameraCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCameraCapture.h; sourceTree = "<group>"; };
-		8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCameraCapture.m; sourceTree = "<group>"; };
-		8E80A8E91C7AE39B00707FF5 /* ARMarkerDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerDetector.h; sourceTree = "<group>"; };
-		8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerDetector.m; sourceTree = "<group>"; };
-		8E80A9001C7AFE1A00707FF5 /* ARDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDisplayView.h; sourceTree = "<group>"; };
-		8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDisplayView.m; sourceTree = "<group>"; };
+		8E64B1EF1C7B3B8C007027A0 /* ARCameraCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCameraCapture.h; sourceTree = "<group>"; };
+		8E64B1F01C7B3B8C007027A0 /* ARCameraCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCameraCapture.m; sourceTree = "<group>"; };
+		8E64B1F11C7B3B8C007027A0 /* ARDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDisplayView.h; sourceTree = "<group>"; };
+		8E64B1F21C7B3B8C007027A0 /* ARDisplayView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARDisplayView.mm; sourceTree = "<group>"; };
+		8E64B1F31C7B3B8C007027A0 /* ARMarkerDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerDetector.h; sourceTree = "<group>"; };
+		8E64B1F41C7B3B8C007027A0 /* ARMarkerDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerDetector.m; sourceTree = "<group>"; };
+		8E64B1F51C7B3B8C007027A0 /* hiro_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hiro_marker.png; sourceTree = "<group>"; };
+		8E64B25B1C7B49D9007027A0 /* OGE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGE.h; sourceTree = "<group>"; };
+		8E64B25C1C7B49DA007027A0 /* OGEApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEApplication.h; sourceTree = "<group>"; };
+		8E64B25D1C7B49DA007027A0 /* OGEApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEApplication.mm; sourceTree = "<group>"; };
+		8E64B25E1C7B49DA007027A0 /* OGECommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGECommon.h; sourceTree = "<group>"; };
+		8E64B25F1C7B49DA007027A0 /* OGEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEDefines.h; sourceTree = "<group>"; };
+		8E64B2601C7B49DA007027A0 /* OGEFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEFile.h; sourceTree = "<group>"; };
+		8E64B2611C7B49DA007027A0 /* OGEFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEFile.mm; sourceTree = "<group>"; };
+		8E64B2621C7B49DA007027A0 /* OGEGlobal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OGEGlobal.cpp; sourceTree = "<group>"; };
+		8E64B2631C7B49DA007027A0 /* OGEGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEGlobal.h; sourceTree = "<group>"; };
+		8E64B2641C7B49DA007027A0 /* OGEMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEMaterial.h; sourceTree = "<group>"; };
+		8E64B2651C7B49DA007027A0 /* OGEMaterial.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEMaterial.mm; sourceTree = "<group>"; };
+		8E64B2661C7B49DA007027A0 /* OGEMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEMesh.h; sourceTree = "<group>"; };
+		8E64B2671C7B49DA007027A0 /* OGEMesh.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEMesh.mm; sourceTree = "<group>"; };
+		8E64B2681C7B49DA007027A0 /* OGEOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEOBJ.h; sourceTree = "<group>"; };
+		8E64B2691C7B49DA007027A0 /* OGEOBJ.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEOBJ.mm; sourceTree = "<group>"; };
+		8E64B26A1C7B49DA007027A0 /* OGEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGEProgram.h; sourceTree = "<group>"; };
+		8E64B26B1C7B49DA007027A0 /* OGEProgram.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGEProgram.mm; sourceTree = "<group>"; };
+		8E64B26C1C7B49DA007027A0 /* OGETexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGETexture.h; sourceTree = "<group>"; };
+		8E64B26D1C7B49DA007027A0 /* OGETexture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGETexture.mm; sourceTree = "<group>"; };
+		8E64B26F1C7B49DA007027A0 /* ShaderDefault.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderDefault.fsh; sourceTree = "<group>"; };
+		8E64B2701C7B49DA007027A0 /* ShaderDefault.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderDefault.vsh; sourceTree = "<group>"; };
+		8E64B2731C7B49DA007027A0 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		8E64B2741C7B49DA007027A0 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		8E64B2751C7B49DA007027A0 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		8E64B2771C7B49DA007027A0 /* pngpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngpriv.h; sourceTree = "<group>"; };
+		8E64B2781C7B49DA007027A0 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
+		8E64B2791C7B49DA007027A0 /* tiny_obj_loader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tiny_obj_loader.cc; sourceTree = "<group>"; };
+		8E64B27A1C7B49DA007027A0 /* tiny_obj_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiny_obj_loader.h; sourceTree = "<group>"; };
+		8E64B27B1C7B49DA007027A0 /* WavefrontOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavefrontOBJ.h; sourceTree = "<group>"; };
+		8E64B27C1C7B49DA007027A0 /* WavefrontOBJ.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavefrontOBJ.mm; sourceTree = "<group>"; };
+		8E64B28B1C7B4AF3007027A0 /* cube2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube2.obj; sourceTree = "<group>"; };
+		8E64B28D1C7B4B84007027A0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		8E64B28F1C7B4D9D007027A0 /* cube2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube2.mtl; sourceTree = "<group>"; };
 		8E8D8BD21C76F3110047E20A /* OnPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8D8BD61C76F3110047E20A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E8D8BDF1C76F3110047E20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -283,11 +335,11 @@
 		8E8D8D1A1C77030C0047E20A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8E8D8D261C7704E00047E20A /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = ARToolKit5/bin/Data; sourceTree = "<group>"; };
 		8E8D8D2A1C770F440047E20A /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
-		8E8D8D2B1C770F440047E20A /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
+		8E8D8D2B1C770F440047E20A /* ARView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ARView.mm; sourceTree = "<group>"; };
 		8E8D8D2C1C770F440047E20A /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		8E8D8D2D1C770F440047E20A /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		8E8D8D311C7710D50047E20A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8E8D8D321C7710D50047E20A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E8D8D321C7710D50047E20A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,15 +347,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E80A8DD1C7AAD9800707FF5 /* libEden.a in Frameworks */,
-				8E80A8DC1C7AAD3D00707FF5 /* libARMulti.a in Frameworks */,
-				8E80A8D81C7AAD2F00707FF5 /* libAR.a in Frameworks */,
-				8E80A8D91C7AAD2F00707FF5 /* libARgsub_es2.a in Frameworks */,
-				8E80A8DA1C7AAD2F00707FF5 /* libARICP.a in Frameworks */,
-				8E80A8DB1C7AAD2F00707FF5 /* libARvideo.a in Frameworks */,
+				8E64B28E1C7B4B85007027A0 /* GLKit.framework in Frameworks */,
 				8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */,
 				8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */,
 				8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */,
+				8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */,
+				8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */,
+				8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */,
+				8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */,
+				8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */,
+				8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */,
+				8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */,
 				8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */,
 				8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */,
 				8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */,
@@ -314,15 +368,95 @@
 				8E8D8CB51C76FEB80047E20A /* CoreGraphics.framework in Frameworks */,
 				8E8D8CB11C76FE100047E20A /* QuartzCore.framework in Frameworks */,
 				8E8D8C591C76F92C0047E20A /* OpenGLES.framework in Frameworks */,
+				8E64B2871C7B49DA007027A0 /* libpng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E64B25A1C7B49D9007027A0 /* OGE */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B25B1C7B49D9007027A0 /* OGE.h */,
+				8E64B25C1C7B49DA007027A0 /* OGEApplication.h */,
+				8E64B25D1C7B49DA007027A0 /* OGEApplication.mm */,
+				8E64B25E1C7B49DA007027A0 /* OGECommon.h */,
+				8E64B25F1C7B49DA007027A0 /* OGEDefines.h */,
+				8E64B2601C7B49DA007027A0 /* OGEFile.h */,
+				8E64B2611C7B49DA007027A0 /* OGEFile.mm */,
+				8E64B2621C7B49DA007027A0 /* OGEGlobal.cpp */,
+				8E64B2631C7B49DA007027A0 /* OGEGlobal.h */,
+				8E64B2641C7B49DA007027A0 /* OGEMaterial.h */,
+				8E64B2651C7B49DA007027A0 /* OGEMaterial.mm */,
+				8E64B2661C7B49DA007027A0 /* OGEMesh.h */,
+				8E64B2671C7B49DA007027A0 /* OGEMesh.mm */,
+				8E64B2681C7B49DA007027A0 /* OGEOBJ.h */,
+				8E64B2691C7B49DA007027A0 /* OGEOBJ.mm */,
+				8E64B26A1C7B49DA007027A0 /* OGEProgram.h */,
+				8E64B26B1C7B49DA007027A0 /* OGEProgram.mm */,
+				8E64B26C1C7B49DA007027A0 /* OGETexture.h */,
+				8E64B26D1C7B49DA007027A0 /* OGETexture.mm */,
+				8E64B26E1C7B49DA007027A0 /* Shaders */,
+				8E64B2711C7B49DA007027A0 /* thirdparty */,
+			);
+			path = OGE;
+			sourceTree = "<group>";
+		};
+		8E64B26E1C7B49DA007027A0 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B26F1C7B49DA007027A0 /* ShaderDefault.fsh */,
+				8E64B2701C7B49DA007027A0 /* ShaderDefault.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		8E64B2711C7B49DA007027A0 /* thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B2721C7B49DA007027A0 /* include */,
+				8E64B2781C7B49DA007027A0 /* libpng.a */,
+				8E64B2791C7B49DA007027A0 /* tiny_obj_loader.cc */,
+				8E64B27A1C7B49DA007027A0 /* tiny_obj_loader.h */,
+				8E64B27B1C7B49DA007027A0 /* WavefrontOBJ.h */,
+				8E64B27C1C7B49DA007027A0 /* WavefrontOBJ.mm */,
+			);
+			path = thirdparty;
+			sourceTree = "<group>";
+		};
+		8E64B2721C7B49DA007027A0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B2731C7B49DA007027A0 /* png.h */,
+				8E64B2741C7B49DA007027A0 /* pngconf.h */,
+				8E64B2751C7B49DA007027A0 /* pnglibconf.h */,
+				8E64B2761C7B49DA007027A0 /* private */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8E64B2761C7B49DA007027A0 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B2771C7B49DA007027A0 /* pngpriv.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		8E64B28A1C7B4AF3007027A0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E64B28F1C7B4D9D007027A0 /* cube2.mtl */,
+				8E64B28B1C7B4AF3007027A0 /* cube2.obj */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		8E8D8BC91C76F3110047E20A = {
 			isa = PBXGroup;
 			children = (
+				8E64B28D1C7B4B84007027A0 /* GLKit.framework */,
 				8E8D8D261C7704E00047E20A /* Data */,
 				8E8D8D1C1C7703130047E20A /* libs */,
 				8E8D8BEC1C76F3410047E20A /* ARToolKit5iOS.xcodeproj */,
@@ -342,18 +476,21 @@
 		8E8D8BD41C76F3110047E20A /* OnPaper */ = {
 			isa = PBXGroup;
 			children = (
+				8E64B28A1C7B4AF3007027A0 /* resources */,
+				8E64B25A1C7B49D9007027A0 /* OGE */,
+				8E64B1EF1C7B3B8C007027A0 /* ARCameraCapture.h */,
+				8E64B1F01C7B3B8C007027A0 /* ARCameraCapture.m */,
+				8E64B1F11C7B3B8C007027A0 /* ARDisplayView.h */,
+				8E64B1F21C7B3B8C007027A0 /* ARDisplayView.mm */,
+				8E64B1F31C7B3B8C007027A0 /* ARMarkerDetector.h */,
+				8E64B1F41C7B3B8C007027A0 /* ARMarkerDetector.m */,
+				8E64B1F51C7B3B8C007027A0 /* hiro_marker.png */,
 				8E8D8D311C7710D50047E20A /* AppDelegate.h */,
-				8E8D8D321C7710D50047E20A /* AppDelegate.m */,
+				8E8D8D321C7710D50047E20A /* AppDelegate.mm */,
 				8E8D8D2A1C770F440047E20A /* ARView.h */,
-				8E8D8D2B1C770F440047E20A /* ARView.m */,
+				8E8D8D2B1C770F440047E20A /* ARView.mm */,
 				8E8D8D2C1C770F440047E20A /* ARViewController.h */,
 				8E8D8D2D1C770F440047E20A /* ARViewController.m */,
-				8E80A8E41C7AD76C00707FF5 /* ARCameraCapture.h */,
-				8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */,
-				8E80A8E91C7AE39B00707FF5 /* ARMarkerDetector.h */,
-				8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */,
-				8E80A9001C7AFE1A00707FF5 /* ARDisplayView.h */,
-				8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */,
 				8E8D8C311C76F3D30047E20A /* ARAppCore */,
 				8E8D8BDE1C76F3110047E20A /* Main.storyboard */,
 				8E8D8BE11C76F3110047E20A /* Assets.xcassets */,
@@ -674,9 +811,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E64B2901C7B4D9D007027A0 /* cube2.mtl in Resources */,
+				8E64B2851C7B49DA007027A0 /* ShaderDefault.fsh in Resources */,
 				8E8D8BE51C76F3110047E20A /* LaunchScreen.storyboard in Resources */,
+				8E64B1F91C7B3B8C007027A0 /* hiro_marker.png in Resources */,
+				8E64B28C1C7B4AF3007027A0 /* cube2.obj in Resources */,
 				8E8D8BE21C76F3110047E20A /* Assets.xcassets in Resources */,
 				8E8D8D271C7704E00047E20A /* Data in Resources */,
+				8E64B2861C7B49DA007027A0 /* ShaderDefault.vsh in Resources */,
 				8E8D8BE01C76F3110047E20A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,18 +831,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8D8C4B1C76F3D30047E20A /* ARMarker.m in Sources */,
-				8E8D8D2F1C770F440047E20A /* ARView.m in Sources */,
+				8E8D8D2F1C770F440047E20A /* ARView.mm in Sources */,
+				8E64B2801C7B49DA007027A0 /* OGEMaterial.mm in Sources */,
+				8E64B2821C7B49DA007027A0 /* OGEOBJ.mm in Sources */,
 				8E8D8C4D1C76F3D30047E20A /* ARMarkerNFT.m in Sources */,
-				8E80A9021C7AFE1A00707FF5 /* ARDisplayView.m in Sources */,
 				8E8D8C4C1C76F3D30047E20A /* ARMarkerMulti.m in Sources */,
-				8E80A8EB1C7AE39B00707FF5 /* ARMarkerDetector.m in Sources */,
-				8E8D8D331C7710D50047E20A /* AppDelegate.m in Sources */,
+				8E8D8D331C7710D50047E20A /* AppDelegate.mm in Sources */,
 				8E8D8C501C76F3D30047E20A /* EAGLView.m in Sources */,
+				8E64B1F71C7B3B8C007027A0 /* ARDisplayView.mm in Sources */,
+				8E64B2811C7B49DA007027A0 /* OGEMesh.mm in Sources */,
+				8E64B27E1C7B49DA007027A0 /* OGEFile.mm in Sources */,
+				8E64B2841C7B49DA007027A0 /* OGETexture.mm in Sources */,
 				8E8D8C511C76F3D30047E20A /* trackingSub.c in Sources */,
+				8E64B1F81C7B3B8C007027A0 /* ARMarkerDetector.m in Sources */,
+				8E64B27F1C7B49DA007027A0 /* OGEGlobal.cpp in Sources */,
 				8E8D8BD71C76F3110047E20A /* main.m in Sources */,
 				8E8D8C4E1C76F3D30047E20A /* ARMarkerSquare.m in Sources */,
+				8E64B2831C7B49DA007027A0 /* OGEProgram.mm in Sources */,
+				8E64B2881C7B49DA007027A0 /* tiny_obj_loader.cc in Sources */,
 				8E8D8D301C770F440047E20A /* ARViewController.m in Sources */,
-				8E80A8E61C7AD76C00707FF5 /* ARCameraCapture.m in Sources */,
+				8E64B27D1C7B49DA007027A0 /* OGEApplication.mm in Sources */,
+				8E64B1F61C7B3B8C007027A0 /* ARCameraCapture.m in Sources */,
+				8E64B2891C7B49DA007027A0 /* WavefrontOBJ.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,11 +991,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OnPaper/pch.pch";
 				INFOPLIST_FILE = OnPaper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ARToolKit5/lib",
 					"$(PROJECT_DIR)/ARToolKit5/lib/ios511",
+					"$(PROJECT_DIR)/OnPaper/OGE/thirdparty",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OnPaper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -861,11 +1015,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/OnPaper/pch.pch";
 				INFOPLIST_FILE = OnPaper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ARToolKit5/lib",
 					"$(PROJECT_DIR)/ARToolKit5/lib/ios511",
+					"$(PROJECT_DIR)/OnPaper/OGE/thirdparty",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.ocean.OnPaper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
