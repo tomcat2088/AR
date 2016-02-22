@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E80A8D81C7AAD2F00707FF5 /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C081C76F3420047E20A /* libAR.a */; };
+		8E80A8D91C7AAD2F00707FF5 /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C101C76F3420047E20A /* libARgsub_es2.a */; };
+		8E80A8DA1C7AAD2F00707FF5 /* libARICP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0A1C76F3420047E20A /* libARICP.a */; };
+		8E80A8DB1C7AAD2F00707FF5 /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0C1C76F3420047E20A /* libARvideo.a */; };
+		8E80A8DC1C7AAD3D00707FF5 /* libARMulti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C121C76F3420047E20A /* libARMulti.a */; };
+		8E80A8DD1C7AAD9800707FF5 /* libEden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1C1C76F3420047E20A /* libEden.a */; };
+		8E80A8E61C7AD76C00707FF5 /* ARCameraCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */; };
+		8E80A8EB1C7AE39B00707FF5 /* ARMarkerDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */; };
+		8E80A9021C7AFE1A00707FF5 /* ARDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */; };
 		8E8D8BD71C76F3110047E20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8D8BD61C76F3110047E20A /* main.m */; };
 		8E8D8BE01C76F3110047E20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BDE1C76F3110047E20A /* Main.storyboard */; };
 		8E8D8BE21C76F3110047E20A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8D8BE11C76F3110047E20A /* Assets.xcassets */; };
@@ -20,30 +29,6 @@
 		8E8D8C591C76F92C0047E20A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C581C76F92C0047E20A /* OpenGLES.framework */; };
 		8E8D8CB11C76FE100047E20A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB01C76FE100047E20A /* QuartzCore.framework */; };
 		8E8D8CB51C76FEB80047E20A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB41C76FEB80047E20A /* CoreGraphics.framework */; };
-		8E8D8CE01C7700540047E20A /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB21C76FE9E0047E20A /* libjpeg.a */; };
-		8E8D8CE11C7700540047E20A /* libOpenThreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB81C76FF180047E20A /* libOpenThreads.a */; };
-		8E8D8CE21C7700540047E20A /* libosg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CB91C76FF180047E20A /* libosg.a */; };
-		8E8D8CE31C7700540047E20A /* libosgdb_freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD61C77002F0047E20A /* libosgdb_freetype.a */; };
-		8E8D8CE41C7700540047E20A /* libosgdb_imageio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD71C77002F0047E20A /* libosgdb_imageio.a */; };
-		8E8D8CE51C7700540047E20A /* libosgdb_ive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD81C77002F0047E20A /* libosgdb_ive.a */; };
-		8E8D8CE61C7700540047E20A /* libosgdb_obj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CD91C77002F0047E20A /* libosgdb_obj.a */; };
-		8E8D8CE71C7700540047E20A /* libosgdb_osg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CDA1C77002F0047E20A /* libosgdb_osg.a */; };
-		8E8D8CE81C7700540047E20A /* libosgDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBE1C76FFBB0047E20A /* libosgDB.a */; };
-		8E8D8CE91C7700540047E20A /* libosgGA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBF1C76FFBB0047E20A /* libosgGA.a */; };
-		8E8D8CEA1C7700540047E20A /* libosgManipulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC21C76FFDD0047E20A /* libosgManipulator.a */; };
-		8E8D8CEB1C7700540047E20A /* libosgParticle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC31C76FFDD0047E20A /* libosgParticle.a */; };
-		8E8D8CEC1C7700540047E20A /* libosgPresentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC41C76FFDD0047E20A /* libosgPresentation.a */; };
-		8E8D8CED1C7700540047E20A /* libosgShadow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC51C76FFDD0047E20A /* libosgShadow.a */; };
-		8E8D8CEE1C7700540047E20A /* libosgSim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC61C76FFDD0047E20A /* libosgSim.a */; };
-		8E8D8CEF1C7700540047E20A /* libosgTerrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC71C76FFDE0047E20A /* libosgTerrain.a */; };
-		8E8D8CF01C7700540047E20A /* libosgText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC81C76FFDE0047E20A /* libosgText.a */; };
-		8E8D8CF11C7700540047E20A /* libosgUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CBC1C76FF380047E20A /* libosgUtil.a */; };
-		8E8D8CF21C7700540047E20A /* libosgViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CC91C76FFDE0047E20A /* libosgViewer.a */; };
-		8E8D8CF31C7700540047E20A /* libosgVolume.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CCA1C76FFDE0047E20A /* libosgVolume.a */; };
-		8E8D8CF41C7700540047E20A /* libosgWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CCB1C76FFDE0047E20A /* libosgWidget.a */; };
-		8E8D8CF81C7700550047E20A /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF51C7700550047E20A /* libfreetype.a */; };
-		8E8D8CF91C7700550047E20A /* libosgAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF61C7700550047E20A /* libosgAnimation.a */; };
-		8E8D8CFA1C7700550047E20A /* libosgFX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CF71C7700550047E20A /* libosgFX.a */; };
 		8E8D8CFC1C7700620047E20A /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFB1C7700620047E20A /* libz.1.1.3.tbd */; };
 		8E8D8CFE1C7700710047E20A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFD1C7700710047E20A /* CoreImage.framework */; };
 		8E8D8D001C7700850047E20A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8CFF1C7700850047E20A /* ImageIO.framework */; };
@@ -51,18 +36,6 @@
 		8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D031C77011A0047E20A /* AudioToolbox.framework */; };
 		8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D051C7701290047E20A /* CoreVideo.framework */; };
 		8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D071C77014A0047E20A /* MobileCoreServices.framework */; };
-		8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C081C76F3420047E20A /* libAR.a */; };
-		8E8D8D0A1C7701A50047E20A /* libAR2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C161C76F3420047E20A /* libAR2.a */; };
-		8E8D8D0B1C7701A50047E20A /* libARgsub_es.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0E1C76F3420047E20A /* libARgsub_es.a */; };
-		8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C101C76F3420047E20A /* libARgsub_es2.a */; };
-		8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0A1C76F3420047E20A /* libARICP.a */; };
-		8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C121C76F3420047E20A /* libARMulti.a */; };
-		8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C141C76F3420047E20A /* libARosg.a */; };
-		8E8D8D101C7701A50047E20A /* libARUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1A1C76F3420047E20A /* libARUtil.a */; };
-		8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C0C1C76F3420047E20A /* libARvideo.a */; };
-		8E8D8D121C7701A50047E20A /* libARWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1E1C76F3420047E20A /* libARWrapper.a */; };
-		8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C1C1C76F3420047E20A /* libEden.a */; };
-		8E8D8D141C7701A50047E20A /* libKPM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8C181C76F3420047E20A /* libKPM.a */; };
 		8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D161C7702AE0047E20A /* AVFoundation.framework */; };
 		8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D181C7702B30047E20A /* CoreMedia.framework */; };
 		8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8D8D1A1C77030C0047E20A /* Accelerate.framework */; };
@@ -244,6 +217,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E80A8E41C7AD76C00707FF5 /* ARCameraCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCameraCapture.h; sourceTree = "<group>"; };
+		8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCameraCapture.m; sourceTree = "<group>"; };
+		8E80A8E91C7AE39B00707FF5 /* ARMarkerDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMarkerDetector.h; sourceTree = "<group>"; };
+		8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMarkerDetector.m; sourceTree = "<group>"; };
+		8E80A9001C7AFE1A00707FF5 /* ARDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDisplayView.h; sourceTree = "<group>"; };
+		8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDisplayView.m; sourceTree = "<group>"; };
 		8E8D8BD21C76F3110047E20A /* OnPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8D8BD61C76F3110047E20A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E8D8BDF1C76F3110047E20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -316,21 +295,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E80A8DD1C7AAD9800707FF5 /* libEden.a in Frameworks */,
+				8E80A8DC1C7AAD3D00707FF5 /* libARMulti.a in Frameworks */,
+				8E80A8D81C7AAD2F00707FF5 /* libAR.a in Frameworks */,
+				8E80A8D91C7AAD2F00707FF5 /* libARgsub_es2.a in Frameworks */,
+				8E80A8DA1C7AAD2F00707FF5 /* libARICP.a in Frameworks */,
+				8E80A8DB1C7AAD2F00707FF5 /* libARvideo.a in Frameworks */,
 				8E8D8D1B1C77030C0047E20A /* Accelerate.framework in Frameworks */,
 				8E8D8D191C7702B30047E20A /* CoreMedia.framework in Frameworks */,
 				8E8D8D171C7702AE0047E20A /* AVFoundation.framework in Frameworks */,
-				8E8D8D091C7701A50047E20A /* libAR.a in Frameworks */,
-				8E8D8D0A1C7701A50047E20A /* libAR2.a in Frameworks */,
-				8E8D8D0B1C7701A50047E20A /* libARgsub_es.a in Frameworks */,
-				8E8D8D0C1C7701A50047E20A /* libARgsub_es2.a in Frameworks */,
-				8E8D8D0D1C7701A50047E20A /* libARICP.a in Frameworks */,
-				8E8D8D0E1C7701A50047E20A /* libARMulti.a in Frameworks */,
-				8E8D8D0F1C7701A50047E20A /* libARosg.a in Frameworks */,
-				8E8D8D101C7701A50047E20A /* libARUtil.a in Frameworks */,
-				8E8D8D111C7701A50047E20A /* libARvideo.a in Frameworks */,
-				8E8D8D121C7701A50047E20A /* libARWrapper.a in Frameworks */,
-				8E8D8D131C7701A50047E20A /* libEden.a in Frameworks */,
-				8E8D8D141C7701A50047E20A /* libKPM.a in Frameworks */,
 				8E8D8D081C77014A0047E20A /* MobileCoreServices.framework in Frameworks */,
 				8E8D8D061C7701290047E20A /* CoreVideo.framework in Frameworks */,
 				8E8D8D041C77011A0047E20A /* AudioToolbox.framework in Frameworks */,
@@ -338,30 +311,6 @@
 				8E8D8D001C7700850047E20A /* ImageIO.framework in Frameworks */,
 				8E8D8CFE1C7700710047E20A /* CoreImage.framework in Frameworks */,
 				8E8D8CFC1C7700620047E20A /* libz.1.1.3.tbd in Frameworks */,
-				8E8D8CF81C7700550047E20A /* libfreetype.a in Frameworks */,
-				8E8D8CF91C7700550047E20A /* libosgAnimation.a in Frameworks */,
-				8E8D8CFA1C7700550047E20A /* libosgFX.a in Frameworks */,
-				8E8D8CE01C7700540047E20A /* libjpeg.a in Frameworks */,
-				8E8D8CE11C7700540047E20A /* libOpenThreads.a in Frameworks */,
-				8E8D8CE21C7700540047E20A /* libosg.a in Frameworks */,
-				8E8D8CE31C7700540047E20A /* libosgdb_freetype.a in Frameworks */,
-				8E8D8CE41C7700540047E20A /* libosgdb_imageio.a in Frameworks */,
-				8E8D8CE51C7700540047E20A /* libosgdb_ive.a in Frameworks */,
-				8E8D8CE61C7700540047E20A /* libosgdb_obj.a in Frameworks */,
-				8E8D8CE71C7700540047E20A /* libosgdb_osg.a in Frameworks */,
-				8E8D8CE81C7700540047E20A /* libosgDB.a in Frameworks */,
-				8E8D8CE91C7700540047E20A /* libosgGA.a in Frameworks */,
-				8E8D8CEA1C7700540047E20A /* libosgManipulator.a in Frameworks */,
-				8E8D8CEB1C7700540047E20A /* libosgParticle.a in Frameworks */,
-				8E8D8CEC1C7700540047E20A /* libosgPresentation.a in Frameworks */,
-				8E8D8CED1C7700540047E20A /* libosgShadow.a in Frameworks */,
-				8E8D8CEE1C7700540047E20A /* libosgSim.a in Frameworks */,
-				8E8D8CEF1C7700540047E20A /* libosgTerrain.a in Frameworks */,
-				8E8D8CF01C7700540047E20A /* libosgText.a in Frameworks */,
-				8E8D8CF11C7700540047E20A /* libosgUtil.a in Frameworks */,
-				8E8D8CF21C7700540047E20A /* libosgViewer.a in Frameworks */,
-				8E8D8CF31C7700540047E20A /* libosgVolume.a in Frameworks */,
-				8E8D8CF41C7700540047E20A /* libosgWidget.a in Frameworks */,
 				8E8D8CB51C76FEB80047E20A /* CoreGraphics.framework in Frameworks */,
 				8E8D8CB11C76FE100047E20A /* QuartzCore.framework in Frameworks */,
 				8E8D8C591C76F92C0047E20A /* OpenGLES.framework in Frameworks */,
@@ -399,6 +348,12 @@
 				8E8D8D2B1C770F440047E20A /* ARView.m */,
 				8E8D8D2C1C770F440047E20A /* ARViewController.h */,
 				8E8D8D2D1C770F440047E20A /* ARViewController.m */,
+				8E80A8E41C7AD76C00707FF5 /* ARCameraCapture.h */,
+				8E80A8E51C7AD76C00707FF5 /* ARCameraCapture.m */,
+				8E80A8E91C7AE39B00707FF5 /* ARMarkerDetector.h */,
+				8E80A8EA1C7AE39B00707FF5 /* ARMarkerDetector.m */,
+				8E80A9001C7AFE1A00707FF5 /* ARDisplayView.h */,
+				8E80A9011C7AFE1A00707FF5 /* ARDisplayView.m */,
 				8E8D8C311C76F3D30047E20A /* ARAppCore */,
 				8E8D8BDE1C76F3110047E20A /* Main.storyboard */,
 				8E8D8BE11C76F3110047E20A /* Assets.xcassets */,
@@ -736,13 +691,16 @@
 				8E8D8C4B1C76F3D30047E20A /* ARMarker.m in Sources */,
 				8E8D8D2F1C770F440047E20A /* ARView.m in Sources */,
 				8E8D8C4D1C76F3D30047E20A /* ARMarkerNFT.m in Sources */,
+				8E80A9021C7AFE1A00707FF5 /* ARDisplayView.m in Sources */,
 				8E8D8C4C1C76F3D30047E20A /* ARMarkerMulti.m in Sources */,
+				8E80A8EB1C7AE39B00707FF5 /* ARMarkerDetector.m in Sources */,
 				8E8D8D331C7710D50047E20A /* AppDelegate.m in Sources */,
 				8E8D8C501C76F3D30047E20A /* EAGLView.m in Sources */,
 				8E8D8C511C76F3D30047E20A /* trackingSub.c in Sources */,
 				8E8D8BD71C76F3110047E20A /* main.m in Sources */,
 				8E8D8C4E1C76F3D30047E20A /* ARMarkerSquare.m in Sources */,
 				8E8D8D301C770F440047E20A /* ARViewController.m in Sources */,
+				8E80A8E61C7AD76C00707FF5 /* ARCameraCapture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +892,7 @@
 				8E8D8BEB1C76F3110047E20A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -61,6 +61,7 @@
 // 
 
 #import "ARAppCore/EAGLView.h"
+#import <AR/gsub_es2.h>
 
 @class ARViewController;
 
@@ -108,7 +109,8 @@ typedef enum {
 @property float *cameraPose;
 @property(readonly) GLint *viewPort;
 - (void) updateWithTimeDelta:(NSTimeInterval)timeDelta;
-- (void) drawView:(id)sender;
+- (void) drawView:(ARGL_CONTEXT_SETTINGS_REF)arglContextSettings;
+- (void)drawGeometry:(float*)viewProjectionMatrix;
 
 // Points to the parent view controller.
 @property (nonatomic, assign) IBOutlet ARViewController *arViewController;

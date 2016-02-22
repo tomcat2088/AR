@@ -329,7 +329,7 @@ enum {
     }
 }
 
-- (void) drawView:(id)sender
+- (void) drawView:(ARGL_CONTEXT_SETTINGS_REF)arglContextSettings
 {
     float const ir90[16] = {0.0f, -1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f, 0.0f,  0.0f, 0.0f, 1.0f, 0.0f,  0.0f, 0.0f, 0.0f, 1.0f};
 	float width, height;
@@ -337,7 +337,7 @@ enum {
     
     [self clearBuffers];
 
-    arglDispImage(arViewController.arglContextSettings);
+    arglDispImage(arglContextSettings);
     
     if (!program) {
         GLuint vertShader = 0, fragShader = 0;
@@ -416,7 +416,8 @@ enum {
         
         // All lighting and geometry to be drawn in world coordinates goes here.
         // --->
-        [self drawCube:viewProjection];
+       // [self drawCube:viewProjection];
+        [self drawGeometry:viewProjection];
     }
     
     // If you added external OpenGL code above, and that code doesn't use the glStateCache routines,

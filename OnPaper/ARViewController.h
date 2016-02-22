@@ -56,36 +56,9 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#include <AR/ar.h>
-#include <AR/video.h>
-#include <AR/gsub_es2.h>
-#import <AR/sys/CameraVideo.h>
-#import "ARAppCore/EAGLView.h"
+#import "ARCameraCapture.h"
 
-@class ARView;
-@interface ARViewController : UIViewController <CameraVideoTookPictureDelegate, EAGLViewTookSnapshotDelegate> {
+@interface ARViewController : UIViewController <ARCameraCaptureDelegate> {
 }
-
-- (IBAction)start;
-- (IBAction)stop;
-- (void) processFrame:(AR2VideoBufferT *)buffer;
-
-- (void)takeSnapshot;
-
-@property (readonly) ARView *glView;
-@property (readonly) ARGL_CONTEXT_SETTINGS_REF arglContextSettings;
-
-@property (readonly, nonatomic, getter=isRunning) BOOL running;
-@property (nonatomic, getter=isPaused) BOOL paused;
-
-// Frame interval defines how many display frames must pass between each time the
-// display link fires. The display link will only fire 30 times a second when the
-// frame internal is two on a display that refreshes 60 times a second. The default
-// frame interval setting of one will fire 60 times a second when the display refreshes
-// at 60 times a second. A frame interval setting of less than one results in undefined
-// behavior.
-@property (nonatomic) NSInteger runLoopInterval;
-
-@property (nonatomic) BOOL markersHaveWhiteBorders;
 
 @end

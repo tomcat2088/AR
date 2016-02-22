@@ -17,4 +17,7 @@
 #endif
 
 
+#define SafeInit(InitExpression,FallBack) if(!InitExpression) \
+FallBack;
+
 #endif /* pch_pch */

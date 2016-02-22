@@ -688,7 +688,7 @@ ARGL_CONTEXT_SETTINGS_REF arglSetupForCurrentContext(ARParam *cparam, AR_PIXEL_F
     
     // This sets pixIntFormat, pixFormat, pixType, pixSize, and resets textureDataReady.
     arglPixelFormatSet(contextSettings, pixelFormat);
-    
+    ARLOGe("Hello from here");
     // Set pixel buffer sizes to incoming image size, by default.
     if (!arglPixelBufferSizeSet(contextSettings, cparam->xsize, cparam->ysize)) {
         ARLOGe("ARGL: Error setting pixel buffer size.\n");

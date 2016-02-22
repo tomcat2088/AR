@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ARViewController processFrame:]:ARViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ARView drawView:]:ARView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "arViewController.arglContextSettings">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ARDisplayView drawGeometry:]:ARDisplayView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "z">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
