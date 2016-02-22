@@ -3,9 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+<<<<<<< Updated upstream
          contextName = "-[ARViewController processFrame:]:ARViewController.m">
       </ContextState>
       <ContextState
+=======
+>>>>>>> Stashed changes
          contextName = "-[ARView drawView:]:ARView.m">
          <PersistentStrings>
             <PersistentString
@@ -13,6 +16,7 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+<<<<<<< Updated upstream
       <ContextState
          contextName = "-[ARDisplayView drawGeometry:]:ARDisplayView.m">
          <PersistentStrings>
@@ -21,5 +25,7 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+=======
+>>>>>>> Stashed changes
    </ContextStates>
 </VariablesViewState>
